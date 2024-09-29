@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #trangchu {
+            text-align: center;
+            padding: 10px;
+        }
+        #banchay {
+            box-shadow: 5px 5px 8px 1px gray;
+        }
+        #nhap {
+            color: white;
+            position: absolute;
+            top: 500px;
+            left: 950px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        a:hover {
+            box-shadow: 5px 5px 8px 1px grey;
+            background-color: white;
+            cursor: pointer;
+        }
+        .wrapper{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        ul.products{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin-left: 150px;
+        }
+        ul.products li{
+            border-radius: 5px;
+            width: 20%;
+            padding: 10px;
+            margin-bottom: 40px;
+            margin-right: 10px;
+            background-color: rgb(225, 224, 223);
+        }
+        ul.products li:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.25);
+        }
+        ul.products li .products-info a{
+            display: block;
+            text-decoration: none;
+        }
+        .products li .products-info a.products-cat {
+            color: gray;
+        }
+        ul.products li .products-info a.products-name {
+            color: rgba(8, 114, 114, 0.753);
+        }
+        a.products-cat{
+            color: gray;
+        }
+        a.products-name{
+            color: rgba(8, 114, 114, 0.753);
+        }
+        .products-thumb {
+            text-align: center;
+        }
+        .products-info {
+            font-size: 20px;
+        }
+        button{
+            background-color: rgb(75, 166, 246);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: rgb(27, 146, 250);
+        }
+        footer {
+            background-color: rgb(12, 146, 235);
+            font-size: 30px;
+            color: white;
+            padding: 20px;
+            clear: both;
+        }
+        li {
+            list-style: none;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            background-color: rgb(12, 146, 235);
+        }
+        img {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="trangchu">
+        <a id="banchay" style="display: inline;margin-left: 1cm;font-size: 25px;" href="./trangchu.html">Trang Chủ</a> 
+        <a style="display: inline;margin-left: 1cm;font-size: 25px;" href="./sanpham.html">Sản phẩm bán chạy</a>
+        <a style="display: inline;margin-left: 1cm;font-size: 25px;" href="./dangnhap.html">Đăng nhập</a>
+        <a style="display: inline;margin-left: 1cm;font-size: 25px;" href="./dangki.html">Đăng kí</a>
+    </div>
+    <h1>Chi tiết sản phẩm</h1>
+    <p>
+        <img style="width: 400px; background-color: gray;" src="data:image/jpeg;base64,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" alt="">
+        <p>
+            <h3>Áo thể thao nam</h3>
+            <label>
+                <span>Kích thước</span>
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+            </label>
+            <p>1000 000 VND</p>
+            <p class="content-description">Áo thun chạy bộ nam Graphic Special là item thể thao được nhiều runner chạy bộ yêu thích và đánh giá cao về chất lượng, thiết kế thời trang<br> Sẽ thật hoàn hảo nếu bạn cũng sở hữu chiếc áo nam này để rèn luyện thể chất, nâng cao chất lượng cuộc sống thông qua các hoạt động thể thao. <br>Cùng Coolmate tìm hiểu ngay chiếc áo thun chạy bộ nam Graphic Special có gì đặc biệt ngay nhé.</p>
+        </p>
+    </p>
+
+    <footer>
+        <p>Nếu sản phẩm lỗi, liên hệ với chúng tôi qua Zalo: 0904999999</p>
+    </footer>
+</body>
+</html>
